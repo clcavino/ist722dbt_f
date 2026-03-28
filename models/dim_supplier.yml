@@ -1,0 +1,50 @@
+version: 2
+
+models:
+  - name: dim_supplier
+    description: One row per supplier
+    columns:
+      - name: supplierkey
+        description: dimension key
+        tests:
+          - not_null
+          - unique
+
+      - name: supplierid
+        description: primary key of the source systems (business key)
+        tests:
+          - not_null
+          - unique
+
+      - name: companyname
+        description: The name of the supplier company
+
+      - name: contactname
+        description: supplier contact name
+
+      - name: contacttitle
+        description: supplier contact title
+
+      - name: supplieraddress
+        description: supplier address
+
+      - name: suppliercity
+        description: supplier city
+
+      - name: supplierregion
+        description: supplier region or state
+
+      - name: supplierpostalcode
+        description: supplier postal code
+
+      - name: suppliercountry
+        description: supplier country
+
+      - name: supplierphone
+        description: supplier phone
+
+      - name: supplierfax
+        description: supplier fax
+
+      - name: supplierhomepage
+        description: supplier homepage
