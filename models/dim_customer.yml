@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: dim_customer
+    description: Customer Dimension. One row per customer
+    tests:
+      - not_null
+      - unique
+  - name: cumstomerid
+    description: The business / source key of the customer 
+    tests:
+      - not_null
+      - unique
+      
