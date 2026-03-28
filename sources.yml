@@ -34,7 +34,7 @@ sources:
               - unique
       - name: Categories
         columns:
-          - name: CatergoryId
+          - name: CategoryId
             tests:
               - unique
       - name: Employees
@@ -55,9 +55,10 @@ sources:
       - name: Order_Details
         tests:
           - dbt_utils.unique_combination_of_columns:
-            combination_of_columns:
-              - OrderId
-              - ProductId
+              arguments: 
+                combination_of_columns:
+                  - OrderId
+                  - ProductId
               
               
               
